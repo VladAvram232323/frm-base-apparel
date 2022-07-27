@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.text {
+  background: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 7rem 16%;
+}
+
+.logo {
+  margin-bottom: 12rem;
+}
+
+.title {
+  font-size: 6rem;
+  letter-spacing: 15px;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 3rem;
+}
+
+span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.desc {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+form {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  border: 1px solid hsl(0, 36%, 70%);
+  padding: 1.5rem 2rem;
+  border-radius: 30px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  margin-left: -65px;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3.8rem;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.error-icon {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+  margin-top: 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
